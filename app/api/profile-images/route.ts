@@ -1,6 +1,6 @@
 import { NextResponse } from 'next/server';
 
-const DEFAULT_BUCKET = 'storia-b8f37.appspot.com';
+const DEFAULT_BUCKET = process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET;
 const DEFAULT_FOLDER = 'dummy-data-images';
 
 export async function GET(request: Request) {
